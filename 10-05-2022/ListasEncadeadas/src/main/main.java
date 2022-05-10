@@ -20,6 +20,16 @@ public class main {
 			System.out.println("Informe o valor positivo para inserir ou negatio para sair");
 			valor = le.nextInt();
 		}
+		
+		System.out.println("Remove?");
+		valor = le.nextInt();
+		while (valor >= 0) {
+			lista.remove(valor);
+			lista.show();
+			System.out.println("Remove?");
+			valor = le.nextInt();
+		}
+		
 		le.close();
 	}
 
